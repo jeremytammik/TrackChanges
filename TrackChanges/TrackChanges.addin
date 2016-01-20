@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command TrackChanges</Text>
+    <Description>Some description for TrackChanges</Description>
+    <Assembly>TrackChanges.dll</Assembly>
+    <FullClassName>TrackChanges.Command</FullClassName>
+    <ClientId>e3210cad-a710-4b6f-9470-999642bf8df4</ClientId>
+    <VendorId>com.typepad.thebuildingcoder</VendorId>
+    <VendorDescription>The Building Coder, http://thebuildingcoder.typepad.com</VendorDescription>
+  </AddIn>
+</RevitAddIns>

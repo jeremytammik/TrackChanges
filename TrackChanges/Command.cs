@@ -457,6 +457,7 @@ namespace TrackChanges
     }
     #endregion // Retrieve solid vertices
 
+    #region Retrieve elements of interest
     /// <summary>
     /// Retrieve all elements to track.
     /// It is up to you to decide which elements
@@ -490,7 +491,9 @@ namespace TrackChanges
           ( null != e.get_BoundingBox( null ) )
           && ( null != e.get_Geometry( opt ) ) );
     }
+    #endregion // Retrieve elements of interest
 
+    #region Store element state
     /// <summary>
     /// Return a string representing the given element
     /// state. This is the information you wish to track.
@@ -530,7 +533,9 @@ namespace TrackChanges
       }
       return s;
     }
+    #endregion // Store element state
 
+    #region Create snapshot
     /// <summary>
     /// Return a dictionary mapping element id values
     /// to hash codes of the element state strings. 
@@ -562,7 +567,9 @@ namespace TrackChanges
       }
       return d;
     }
+    #endregion // Create snapshot
 
+    #region Report differences
     static void ReportDifferences(
       Document doc,
       Dictionary<int, string> start_state,
@@ -630,6 +637,7 @@ namespace TrackChanges
       dlg.MainContent = s;
       dlg.Show();
     }
+    #endregion // Report differences
 
     /// <summary>
     /// Current snapshot of database state.

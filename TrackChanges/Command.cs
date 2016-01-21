@@ -626,9 +626,16 @@ namespace TrackChanges
           ++nIdentical;
         }
       }
-      string msg = string.Format( 
-        "{0} deleted, {1} added, {2} modified, {3} identical elements:", 
+
+      TaskDialog.Show( "Track Changes",
+        "Started tracking changes now." );
+
+      string msg = string.Format(
+        "Stopped tracking changes now.\r\n"
+        + "{0} deleted, {1} added, {2} modified, "
+        + "{3} identical elements:", 
         nDeleted, nAdded, nModified, nIdentical );
+
       string s = string.Join( "\r\n", report );
 
       Debug.Print( msg + "\r\n" + s );
@@ -663,6 +670,8 @@ namespace TrackChanges
       if( null == _start_state )
       {
         _start_state = GetSnapshot( a );
+        TaskDialog.Show( "Track Changes", 
+          "Started tracking changes now." );
       }
       else
       {

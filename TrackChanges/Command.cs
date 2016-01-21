@@ -606,14 +606,14 @@ namespace TrackChanges
       {
         if( !start_state.ContainsKey( id ) )
         {
-          ++nDeleted;
-          report.Add( id.ToString() + " deleted" );
+          ++nAdded;
+          report.Add( id.ToString() + " added "
+            + ElementDescription( doc, id ) );
         }
         else if( !end_state.ContainsKey( id ) )
         {
-          ++nAdded;
-          report.Add( id.ToString() + " added " 
-            + ElementDescription( doc, id ) );
+          ++nDeleted;
+          report.Add( id.ToString() + " deleted" );
         }
         else if( start_state[id] != end_state[id] )
         {
@@ -675,4 +675,6 @@ namespace TrackChanges
   }
 }
 
+// Z:\a\rvt\little_house_2016.rvt
 // C:\Program Files\Autodesk\Revit 2016\Samples\rac_advanced_sample_project.rvt
+// Z:\a\rvt\rme_2016_empty.rvt

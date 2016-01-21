@@ -571,6 +571,15 @@ public class Command : IExternalCommand
   #endregion // Creating a Database State Snapshot
 
   #region Report differences
+  /// <summary>
+  /// Compare the start and end states and report the 
+  /// differences found. In this implementation, we
+  /// just store a hash code of the element state.
+  /// If you choose to store the full string 
+  /// representation, you can use that for comparison,
+  /// and then report exactly what changed and the
+  /// original values as well.
+  /// </summary>
   static void ReportDifferences(
     Document doc,
     Dictionary<int, string> start_state,

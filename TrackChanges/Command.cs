@@ -627,9 +627,6 @@ namespace TrackChanges
         }
       }
 
-      TaskDialog.Show( "Track Changes",
-        "Started tracking changes now." );
-
       string msg = string.Format(
         "Stopped tracking changes now.\r\n"
         + "{0} deleted, {1} added, {2} modified, "

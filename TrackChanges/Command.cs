@@ -300,17 +300,19 @@ public class Command : IExternalCommand
     {
       Mesh m = f.Triangulate();
 
-      foreach( XYZ p in m.Vertices )
+      if (m != null)
       {
-        XYZ q = t.OfPoint( p );
-
-        if( !vertexLookup.ContainsKey( q ) )
+        foreach( XYZ p in m.Vertices )
         {
-          vertexLookup.Add( q, 1 );
-        }
-        else
-        {
-          ++vertexLookup[q];
+          XYZ q = t.OfPoint( p );
+          if( !vertexLookup.ContainsKey( q ) )
+          {
+            vertexLookup.Add( q, 1 );
+          }
+          else
+          {
+            ++vertexLookup[q];
+	      }
         }
       }
     }

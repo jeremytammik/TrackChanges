@@ -1,8 +1,6 @@
 # TrackChanges
 
-Track Revit BIM database modification by creating and comparing snapshots of element properties.
-
-TrackChanges is a C# .NET Revit add-in.
+TrackChanges is a C# .NET Revit add-in that tracks Revit BIM database modification by creating and comparing snapshots of element properties.
 
 For more information, please refer
 to [The Building Coder](http://thebuildingcoder.typepad.com) and

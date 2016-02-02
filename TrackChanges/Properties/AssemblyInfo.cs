@@ -32,5 +32,12 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion( "2016.0.0.0" )]
-[assembly: AssemblyFileVersion( "2016.0.0.0" )]
+//
+// History:
+//
+// 2016.0.0.0 2016-01-20 initial version
+// 2016.0.0.1 2016-01-21 fixed added deleted mixup in report, added start and stop notification
+// 2016.0.0.2 2016-02-02 Jason Schaeffer @joespiff added a null check to avoid issues with rooms having null geometry
+//
+[assembly: AssemblyVersion( "2016.0.0.2" )]
+[assembly: AssemblyFileVersion( "2016.0.0.2" )]

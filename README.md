@@ -12,7 +12,7 @@ on [Tracking Element Modification](http://thebuildingcoder.typepad.com/blog/2016
 
 I am pondering an enhancement of this external command based add-in that I suggested to Tim Corneliussen in
 the [Revit API discussion forum](http://forums.autodesk.com/t5/revit-api/bd-p/160) thread
-on [Dynamic model update after loading family](http://forums.autodesk.com/t5/revit-api/dynamic-model-update-after-loading-family/m-p/6052310):
+on [dynamic model update after loading family](http://forums.autodesk.com/t5/revit-api/dynamic-model-update-after-loading-family/m-p/6052310):
 
 Tim says he needs to track changes.
 

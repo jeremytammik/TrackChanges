@@ -38,6 +38,7 @@ using System.Runtime.InteropServices;
 // 2016.0.0.0 2016-01-20 initial version
 // 2016.0.0.1 2016-01-21 fixed added deleted mixup in report, added start and stop notification
 // 2016.0.0.2 2016-02-02 Jason Schaeffer @joespiff added a null check to avoid issues with rooms having null geometry
+// 2016.0.0.3 2016-03-02 final clean-up before splitting off TrackChangesCloud
 //
-[assembly: AssemblyVersion( "2016.0.0.2" )]
-[assembly: AssemblyFileVersion( "2016.0.0.2" )]
+[assembly: AssemblyVersion( "2016.0.0.3" )]
+[assembly: AssemblyFileVersion( "2016.0.0.3" )]

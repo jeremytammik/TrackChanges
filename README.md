@@ -7,6 +7,10 @@ to [The Building Coder](http://thebuildingcoder.typepad.com) and
 the detailed article
 on [Tracking Element Modification](http://thebuildingcoder.typepad.com/blog/2016/01/tracking-element-modification.html).
 
+This repository is now stagnant, because the enhancement described below is implemented in a separate 
+new [TrackChangesCloud project](https://github.com/jeremytammik/TrackChangesCloud) to 
+retain the impressive simplicity of this project unsullied.
+
 
 ## Enhancement
 

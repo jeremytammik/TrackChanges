@@ -22,15 +22,15 @@ Tim says he needs to track changes.
 
 I suggested that he take a look at this.
 
-**Response:** Your solution looks really impressive. I haven't had the chance to implement the main fundamentals in my project yet. As a starting programmer, the concept of hash code is still new to me but it looks like the right way to go. My main concern is how it will effect the perfomance of the routine.
+**Response:** Your solution looks really impressive. I haven't had the chance to implement the main fundamentals in my project yet. As a starting programmer, the concept of hash code is still new to me but it looks like the right way to go. My main concern is how it will affect the performance of the routine.
 
-The main purpose of my tool is that each addtition or modification will be registered by modifying some parameters including a "time-parameter" and "date-parameter". To do so, but correct me if I'm wrong, I need to trigger an event or use a DMU to determine when an element is added or modified.
+The main purpose of my tool is that each addition or modification will be registered by modifying some parameters including a "time-parameter" and "date-parameter". To do so, but correct me if I'm wrong, I need to trigger an event or use a DMU to determine when an element is added or modified.
 
-Maybe I can use your snapshot technique combining it with a DMU. But doing so the DMU also collects a lot of data next to the snapshot routine. Is this necessary? Are there alternatives to affoid this sort of useless multiple data collecting?
+Maybe I can use your snapshot technique combining it with a DMU. But doing so the DMU also collects a lot of data next to the snapshot routine. Is this necessary? Are there alternatives to avoid this sort of useless multiple data collecting?
 
 Do elements themselves contain relevant information about their own creation or modification (perhaps a certain property that most people aren't aware of)? If so, I can use a single event (sort of like your suggestion on your blog), for example the DocumentSavingAs event. Last possible solution I can think of at the moment is a way to look even deeper in to the updaterdata/-information hoping it contains more general information about the addition or modification of the relevant elements.
 
-Hoping that you'll understand the scenario I'm describing. For now I wil try to use the snapshot routine combining it with a DMU and a viewactivating event. Last mentioned will be used to determine whether another document becomes active (when a user has openened multiple projects). I will place an update when I have succesfully created a working solution to discuss the results with you fellow readers. If someone can tell me if this solution probably won't really work please do so.
+Hoping that you'll understand the scenario I'm describing. For now I will try to use the snapshot routine combining it with a DMU and a viewactivating event. Last mentioned will be used to determine whether another document becomes active (when a user has opened multiple projects). I will place an update when I have successfully created a working solution to discuss the results with you fellow readers. If someone can tell me if this solution probably won't really work please do so.
 
 **Answer:** Thank you very much for your appreciation.
 
